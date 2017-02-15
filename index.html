@@ -7,14 +7,28 @@
 
 
       <link type="text/css" href="styles.css" rel="stylesheet">
+
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
       <script src="script.js"></script>
     </head>
 
    <body>
 
       <div id="container">
-       <span>
+        <span id="title">
+          <h1>SJF Development</h1>
+        </span>
+
+        <span id="down">
+          <i class="fa fa-chevron-down" style="font-size: 30px; color: white; cursor: pointer"></i>
+        </span>
+
+       <span id="bars">
          <i class="fa fa-bars" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"></i>
         </span>
       </div>
@@ -32,26 +46,51 @@
 
 
      <div id="main">
-       <h1>SuperJoeFly</h1>
+
+       <div id="header">
+         <h2>SuperJoeFly</h2>
+       </div>
+
 
        <div id="content">
-
+         <h2>Design</h2>
+         <img src="images/design.png" alt="design image" width="100%" height="auto" />
        </div>
-
-
-
 
        <div id="section">
+         <h2>Develop</h2>
+         <video width="100%" height="auto" autoplay loop>
+           <source src="videos/screen.mp4" type="video/mp4" />
+         </video>
+       </div>
 
+       <div id="section2">
+         <h2>Deploy</h2>
+         <img src="images/transfer.png" alt="transfer image" width="100%" height="auto"/>
        </div>
 
 
 
-       <div id="footer">
 
-       </div>
 
      </div>
+
+     <div id="footer">
+       <p style="float: left">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a></p>
+       <p style="float: right">Copyright &copy; 2017 by SJF Development</p>
+     </div>
+
+     <script>
+       $("#down").click(function() {
+       $("#main").velocity("scroll",
+       {duration: 1500, easing: "ease-in-out"});
+     });
+     </script>
+
+
+
+
+
 
 
 
