@@ -47,19 +47,19 @@ right: 20px;
   height: 750px;
   background-color: #202328;
   margin-top: 0;
-  border-top: 2px solid navy;
+
   color: white;
   display: flex;
   align-items: center;
   padding: 10px;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 800px) {
   #main {
     flex-direction: column;
-    height: 1250px;
+    height: 1500px;
   }
 }
 
@@ -73,6 +73,7 @@ border-top: 2px solid red;
 
 #content {
   border-left: 2px solid blue;
+
 }
 
 #content img {
@@ -85,10 +86,12 @@ border-top: 2px solid red;
 
 #section2 {
   border-left: 2px solid orange;
+
 }
 
 #section2 img {
-  max-width: 300px;
+width: 75%;
+height: auto;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>About Me</title>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link type="text/css" rel="stylesheet" href="../styles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
+  <script src="../scripts/script.js"></script>
+  <style>
+
+  #container {
+    background: url("../images/lamp.png") top center fixed no-repeat;
+    background-size: cover;
+  }
+
+  #selfpic {
+    filter: grayscale(50%);
+  }
+
+  #main {
+    disply: inlin-flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  @media screen and (min-width: 800px) {
+    #main div {
+      width: 75%;
+    }
+  }
+
+  #header {
+    text-align: justify;
+    padding: 50px;
+  }
+
+  #content h2 {
+    text-align: left;
+  }
+
+  #content img {
+    float: left;
+    padding: 30px;
+  }
+
+  h1 {
+    margin-top: 100px;
+  }
+
+  ul {
+    text-align: justify;
+    list-style-type: none;
+    padding: 50px;
+  }
+
+  ul li {
+    line-height: 25px;
+  }
+
+  ul li:before {
+    background-image: url("../images/greenbullet.png");
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+    margin-bottom: -5px;
+  }
+
+  #section {
+    width: 100%;
+    display: flex;
+    flex-flow: row-wrap;
+  }
+
+  @media screen and (max-width: 600px) {
+    #section {
+      flex-direction: column;
+    }
+    #header {
+      padding: 20px;
+    }
+    ul {
+      padding: 20px;
+    }
+  }
+
+
+  #section img {
+    width: 300px;
+    height: auto;
+    padding: 30px;
+  }
+
+  </style>
+</head>
+<body>
+
+
+  <div id="container">
+    <!-- <div id="vid">
+      <video width="100%" height="auto" id="video1" autoplay loop poster="">
+        <source src="../videos/screen.mp4" type="video/mp4" />
+      </video>
+      <button id="pausebtn" onclick="playPause()">Play/Pause</button>
+    </div> -->
+
+    <span id="title">
+      <h1>SJF Development</h1>
+    </span>
+
+    <span id="down">
+      <i class="fa fa-chevron-down" style="font-size: 30px; color: white; cursor: pointer"></i>
+    </span>
+
+   <span id="bars">
+     <i class="fa fa-bars" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"></i>
+    </span>
+  </div>
+
+
+
+   <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="../index.html">Home</a>
+     <a href="javascript:void(0)">About</a>
+     <a href="resume.html">Resume</a>
+     <a href="#">Projects</a>
+   </div>
+
+
+
+    <div id="main">
+
+      <div id="header">
+
+        <div id="content">
+          <img src="../images/self.jpg" alt="picture of Joey" width="100%" height="auto" id="selfpic" />
+        </div>
+
+        <h1>About Me</h1>
+        <p>My name is Joseph Atwood and I live in Boulder, Colorado. I currently spend most of my time studying web devlopment, learning new programming languages and developing web pages. I've been coding for about 6 months, and have discovered that I have a passion for development, design and digital manipulation. I really enjoy making websites that are interactive and responsive, and hope to become more active in web animation and mobile development. I've learned most of my skills from the web, but I also have plans to attend a local community college to further my education and become more involved with the web development community. I greatly appreciate the online development, design and programming culture, and all the open-source documentation that is available to help me on this path.</p>
+      </div>
+
+
+
+
+      <div id="section">
+
+        <div id="section" style="display: flex; flex-direction: column; border-bottom: none;">
+        <h2>Fun Facts</h2>
+        <ul>
+          <li>I love the outdoors...hiking, fishing, bike riding, swimming, and of course, walking the dog.</li>
+          <li>I was a fitness trainer for many years and I work out on a regular basis.</li>
+          <li>Houston Texas is my home-town, but I love Colorado!</li>
+          <li>I like to read sci-fi and thrillers. I also really like horror movies :-)</li>
+          <li>Spirituality is a very important part of my life...I pray and mediatate on a regular basis and believe in a Higher Power.</li>
+        </ul>
+      </div>
+
+      <div id="section2">
+        <h2>Bella</h2>
+        <img src="../images/bella.jpg" alt="Bella" />
+      </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <div id="footer">
+      <p style="float: left">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a></p>
+      <p style="float: right">Copyright &copy; 2017 by SJF Development</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+      $("#down").click(function() {
+      $("#main").velocity("scroll",
+      {duration: 1500, easing: "ease-in-out"});
+    });
+    </script>
+
+
+
+    <!-- <script>
+		var myVideo = document.getElementById("video1");
+		function playPause() {
+			if (myVideo.paused)
+			myVideo.play();
+			else
+				myVideo.pause();
+		}
+		</script> -->
+
+
+</body>
+</html>
