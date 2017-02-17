@@ -6,6 +6,8 @@
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
   <link type="text/css" rel="stylesheet" href="../styles.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,9 +29,23 @@
   }
 
   #main {
-    disply: inlin-flex;
+    display: inline-flex;
     flex-direction: column;
-    height: auto;
+    height: 1750px;
+  }
+
+  /*for phone*/
+  @media screen and (min-width: 600px) {
+    #main {
+      height: 1500px;
+    }
+  }
+
+  /*for desktop*/
+  @media screen and (min-width: 1000px) {
+    #main {
+      height: 1200px;
+    }
   }
 
   @media screen and (min-width: 800px) {
@@ -107,12 +123,6 @@
 
 
   <div id="container">
-    <!-- <div id="vid">
-      <video width="100%" height="auto" id="video1" autoplay loop poster="">
-        <source src="../videos/screen.mp4" type="video/mp4" />
-      </video>
-      <button id="pausebtn" onclick="playPause()">Play/Pause</button>
-    </div> -->
 
     <span id="title">
       <h1>SJF Development</h1>
@@ -132,7 +142,7 @@
    <div id="mySidenav" class="sidenav">
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
      <a href="../index.html">Home</a>
-     <a href="javascript:void(0)">About</a>
+     <a href="javascript:void(0)" class="active">About</a>
      <a href="resume.html">Resume</a>
      <a href="#">Projects</a>
    </div>
@@ -159,7 +169,7 @@
         <div id="section" style="display: flex; flex-direction: column; border-bottom: none;">
         <h2>Fun Facts</h2>
         <ul>
-          <li>I love the outdoors...hiking, fishing, bike riding, swimming, and of course, walking the dog.</li>
+          <li>I love the outdoors...hiking, fishing, bike riding, swimming, and of course, walking Bella.</li>
           <li>I was a fitness trainer for many years and I work out on a regular basis.</li>
           <li>Houston Texas is my home-town, but I love Colorado!</li>
           <li>I like to read sci-fi and thrillers. I also really like horror movies :-)</li>
