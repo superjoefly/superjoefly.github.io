@@ -89,7 +89,7 @@ flex: 0 1 0;
 }
 
 #content {
-  border-left: 2px solid blue;
+border-left: 2px solid blue;
 flex: 1 1 0;
 }
 
