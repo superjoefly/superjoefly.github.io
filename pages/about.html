@@ -6,7 +6,9 @@
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
 
   <link type="text/css" rel="stylesheet" href="../styles.css" />
 
@@ -24,58 +26,72 @@
     background-size: cover;
   }
 
-  #selfpic {
-    filter: grayscale(50%);
-  }
+
+
+
+
 
   #main {
-    display: inline-flex;
-    flex-direction: column;
-    height: 1750px;
+    border-top: 2px solid red;
+    text-align: justify;
   }
 
-  /*for phone*/
-  @media screen and (min-width: 600px) {
+  @media screen and (max-width: 1250px) {
     #main {
-      height: 1500px;
-    }
-  }
-
-  /*for desktop*/
-  @media screen and (min-width: 1000px) {
-    #main {
-      height: 1200px;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    #main div {
-      width: 75%;
+      flex-direction: column;
+      height: auto;
     }
   }
 
   #header {
-    text-align: justify;
-    padding: 50px;
+    flex: 1 1 0;
+    border-left: 2px solid lime;
   }
 
-  #content h2 {
-    text-align: left;
+  #content {
+    border-bottom: 2px solid yellow;
   }
 
   #content img {
-    float: left;
-    padding: 30px;
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: auto;
   }
 
-  h1 {
-    margin-top: 100px;
+  #section {
+    border-left: 2px solid blue;
   }
+
+  #section2 {
+    border-top: 2px solid purple;
+  }
+
+  #section2 img {
+    width: 75%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  p {
+    padding: 20px;
+  }
+
+
 
   ul {
-    text-align: justify;
     list-style-type: none;
-    padding: 50px;
+    padding: 25px;
+    margin: 0;
+    text-align: justify;
   }
 
   ul li {
@@ -92,30 +108,6 @@
     margin-bottom: -5px;
   }
 
-  #section {
-    width: 100%;
-    display: flex;
-    flex-flow: row-wrap;
-  }
-
-  @media screen and (max-width: 600px) {
-    #section {
-      flex-direction: column;
-    }
-    #header {
-      padding: 20px;
-    }
-    ul {
-      padding: 20px;
-    }
-  }
-
-
-  #section img {
-    width: 300px;
-    height: auto;
-    padding: 30px;
-  }
 
   </style>
 </head>
@@ -153,37 +145,30 @@
 
       <div id="header">
 
-        <div id="content">
-          <img src="../images/self.jpg" alt="picture of Joey" width="100%" height="auto" id="selfpic" />
-        </div>
-
         <h1>About Me</h1>
         <p>My name is Joseph Atwood and I live in Boulder, Colorado. I currently spend most of my time studying web devlopment, learning new programming languages and developing web pages. I've been coding for about 6 months, and have discovered that I have a passion for development, design and digital manipulation. I really enjoy making websites that are interactive and responsive, and hope to become more active in web animation and mobile development. I've learned most of my skills from the web, but I also have plans to attend a local community college to further my education and become more involved with the web development community. I greatly appreciate the online development, design and programming culture, and all the open-source documentation that is available to help me on this path.</p>
       </div>
 
-
-
+      <div id="content">
+        <img src="../images/self.jpg" alt="picture of Joey" width="100%" height="auto" />
+      </div>
 
       <div id="section">
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>I love the outdoors...hiking, fishing, bike riding, swimming, and of course, walking Bella.</li>
+        <li>I was a fitness trainer for many years and I work out on a regular basis.</li>
+        <li>Houston Texas is my home-town, but I love Colorado!</li>
+        <li>I like to read sci-fi and thrillers. I also really like horror movies :-)</li>
+        <li>Spirituality is a very important part of my life...I pray and mediatate on a regular basis.</li>
+      </ul>
 
-        <div id="section" style="display: flex; flex-direction: column; border-bottom: none;">
-        <h2>Fun Facts</h2>
-        <ul>
-          <li>I love the outdoors...hiking, fishing, bike riding, swimming, and of course, walking Bella.</li>
-          <li>I was a fitness trainer for many years and I work out on a regular basis.</li>
-          <li>Houston Texas is my home-town, but I love Colorado!</li>
-          <li>I like to read sci-fi and thrillers. I also really like horror movies :-)</li>
-          <li>Spirituality is a very important part of my life...I pray and mediatate on a regular basis and believe in a Higher Power.</li>
-        </ul>
       </div>
 
       <div id="section2">
         <h2>Bella</h2>
         <img src="../images/bella.jpg" alt="Bella" />
       </div>
-
-      </div>
-
 
     </div>
 

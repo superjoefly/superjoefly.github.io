@@ -4,7 +4,9 @@
       <title>Welcome</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+      <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
 
       <link type="text/css" href="../styles.css" rel="stylesheet">
 
@@ -26,19 +28,34 @@
         height: auto;
         text-align: left;
         align-items: flex-start;
+        flex-direction: column;
       }
 
-      #header {
+      @media screen and (max-width: 600px) {
+        #main {
+          height: auto;
+        }
+      }
+
+      #section {
+        border-right: 2px solid red;
+      }
+
+      /*#header {
         flex: 0 1 0;
         width: 100%;
       }
 
       #section3 {
         width: 100%;
-      }
+      }*/
 
       h2, h3 {
         text-align: center;
+      }
+
+      p {
+        padding: 20px;
       }
 
       ul {
@@ -53,6 +70,22 @@
         height: 25px;
         content: "";
         margin-bottom: -5px;
+      }
+
+      ul li a:link {
+        color: orange;
+      }
+
+      ul li a:visited {
+        color: white;
+      }
+
+      ul li a:hover {
+        color: white;
+      }
+
+      ul li a:active {
+        color: red;
       }
 
       </style>
@@ -141,7 +174,7 @@
            <li>Research Moile Development Frameworks</li>
          </ul>
 
-         <h3>Other Languages I Want to Learn:</h3>
+         <h3>Things I Want to Learn:</h3>
 
          <ul>
            <li>Java</li>
@@ -159,7 +192,7 @@
          <ul>
            <li><a href="http://www.joefly.site" target="_blank">Joefly.site</a></li>
            <li><a href="http://www.sjfly.site" target="_blank">Sjfly.site</a></li>
-           <li><a href="http://www.sjfly.site/pages/photography" target="_blank">Photography</a></li>
+           <li><a href="http://joefly.site/pages/photography/photography.html" target="_blank">Photography</a></li>
            <li><a href="http://www.txccedp.org" target="_blank">Texas Catholic Campaign...</a></li>
            <li><a href="http://www.belovedcommunityproject.org" target="_blank">The Beloved Community...</a></li>
          </ul>

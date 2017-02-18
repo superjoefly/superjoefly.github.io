@@ -7,7 +7,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: skyblue;
+  font-family: 'Nunito Sans', sans-serif;
 }
+
+/*Font size for desktop*/
+@media screen and (min-width: 600px) {
+p {
+  font-size: 1.2em;
+}
+}
+
+ul {
+  padding-left: 20px;
+}
+
+
 
 /*Top of Page*/
 
@@ -59,10 +73,10 @@ right: 20px;
   justify-content: space-around;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   #main {
     flex-direction: column;
-    height: 1500px;
+    height: auto;
   }
 }
 
@@ -71,7 +85,7 @@ right: 20px;
 
 #header {
 border-top: 2px solid red;
-flex: 1 1 0;
+flex: 0 1 0;
 }
 
 #content {
