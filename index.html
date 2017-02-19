@@ -15,12 +15,15 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
-
       <script src="scripts/script.js"></script>
+
+
+
     </head>
 
    <body>
+
+     <!-- Top of Page -->
 
       <div id="container">
         <span id="title">
@@ -36,7 +39,7 @@
         </span>
       </div>
 
-
+      <!-- Navigation -->
 
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -46,18 +49,16 @@
         <a href="pages/projects.html">Projects</a>
       </div>
 
-
+      <!-- Main Content -->
 
      <div id="main">
-
        <div id="header">
          <h2>SuperJoeFly</h2>
        </div>
 
-
        <div id="content">
          <h2>Design</h2>
-         <img src="images/design.png" alt="design image" width="100%" height="auto" />
+         <img src="images/design.png" alt="design image" width="75%" height="auto" />
        </div>
 
        <div id="section">
@@ -69,34 +70,24 @@
 
        <div id="section2">
          <h2>Deploy</h2>
-         <img src="images/transfer.png" alt="transfer image"/>
+         <img src="images/transfer.png" alt="transfer image" />
        </div>
-
-
-
-
 
      </div>
 
      <div id="footer">
-       <p style="float: left">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a></p>
-       <p style="float: right">Copyright &copy; 2017 by SJF Development</p>
+       <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a>
+       Copyright &copy; 2017 by SJF Development</p>
      </div>
 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
      <script>
-       $("#down").click(function() {
-       $("#main").velocity("scroll",
-       {duration: 1500, easing: "ease-in-out"});
+     $("#down").click(function() {
+     $("#main").velocity("scroll",
+     {duration: 1500, easing: "ease-in-out"});
      });
      </script>
-
-
-
-
-
-
-
-
 
    </body>
 

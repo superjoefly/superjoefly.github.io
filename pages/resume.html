@@ -14,8 +14,6 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
-
       <script src="../scripts/script.js"></script>
 
       <style>
@@ -27,28 +25,23 @@
       #main {
         height: auto;
         text-align: left;
-        align-items: flex-start;
+        align-items: center;;
         flex-direction: column;
       }
 
-      @media screen and (max-width: 600px) {
-        #main {
-          height: auto;
+      #main div {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 800px) {
+        #main div {
+          width: 75%;
         }
       }
 
       #section {
         border-right: 2px solid red;
       }
-
-      /*#header {
-        flex: 0 1 0;
-        width: 100%;
-      }
-
-      #section3 {
-        width: 100%;
-      }*/
 
       h2, h3 {
         text-align: center;
@@ -128,30 +121,27 @@
 
        <div id="content">
          <h2>Education</h2>
-         <p>Most of my learnings have come from online tutorials provided by the web-development community online. I often pull from resources including Stackoverflow, W3Schools and Google in general, as this is often the best and quickest way to find multiple solutions to common, or similar challenges. Following is a list of recent web-development related educational achievements:</p>
+         <p>Most of my learnings have come from online tutorials provided by the web-development community. I often pull from resources including Stackoverflow, W3Schools, CSS-Tricks and Google, as this method is often the best and quickest way to find multiple solutions to common, or similar challenges. Following is a list of recent web-development related educational achievements:</p>
 
          <ul>
            <li>HTML5: Codecademy, W3Schools</li>
            <li>CSS3: Codecademy, W3Schools</li>
-           <li>JavaScript: Codecademy, W3Schools</li>
-           <li>jQuery: W3Schools, jQuery.com</li>
-           <li>jQuery UI: Chennel9.msdn.com, jQuery.com</li>
+           <li>JavaScript: Channel9.msdn.com, Codecademy, W3Schools</li>
+           <li>jQuery: Channel9.msdn.com, W3Schools, jQuery.com</li>
+           <li>jQuery UI: Channel9.msdn.com, jQuery.com</li>
            <li>jQuery Mobile: W3Schools, jQuery.com</li>
-           <li>Vue.js: (in progress), Vue.js.org</li>
-           <li>Stackoverflow</li>
-           <li>CSS-Tricks.com</li>
-           <li>Google</li>
+           <li>Vue.js: Laracasts.com, Vuejs.org</li>
          </ul>
        </div>
 
        <div id="section">
          <h2>Advanced Skills</h2>
-         <p>My skill-set is a work in progress that I put effort towards on a daily basis. There is a ton of information online, and there are a lot of skills that I plan on obtaining. Because of the massive amount of information available, it can often be difficult to know exactly what to learn. At this point, I'm planning on becomeing a full stack web-developer, and I have a strong interest in web-animation and mobile development. Following are some of the more advanced skills that I have aquired in my recent educational efforts:</p>
+         <p>My skill-set is a work in progress that I put effort towards on a daily basis. There is a ton of information online, and there are a lot of skills that I'm currently working on developing. Because of the massive amount of information available, it can often be difficult to know exactly what to learn in order to become employable. At this point, I'm planning on becomeing a full stack web-developer, and I have a strong interest in web-animation and mobile development. Following are some of the more advanced skills that I have aquired in my recent educational efforts:</p>
 
          <ul>
-           <li>Git: creating repositories, adding files, cloning repositories, pulling, pushing etc, submitting issues etc.</li>
-           <li>Publishing websites, adding and editing files using Filezilla,Search Engine Optimization</li>
-           <li>Responsive Web Design Using Grids and Flexbox</li>
+           <li>Git: creating repositories, adding files, cloning repositories, pulling, pushing, submitting issues etc.</li>
+           <li>Publishing websites, adding and editing files using Filezilla,Search Engine Optimization techniques</li>
+           <li>Responsive Web Design Using Grids, Flexbox and Media Queries</li>
            <li>Using frameworks such as W3.CSS and Bootstrap</li>
            <li>Making websites more interactive and visually appealing</li>
            <li>Animations: CSS Animations, Animate.css, Velocity.js</li>
@@ -203,24 +193,18 @@
      </div>
 
      <div id="footer">
-       <p style="float: left">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a></p>
-       <p style="float: right">Copyright &copy; 2017 by SJF Development</p>
+       <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a>
+       Copyright &copy; 2017 by SJF Development</p>
      </div>
 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
      <script>
-       $("#down").click(function() {
-       $("#main").velocity("scroll",
-       {duration: 1500, easing: "ease-in-out"});
+     $("#down").click(function() {
+     $("#main").velocity("scroll",
+     {duration: 1500, easing: "ease-in-out"});
      });
      </script>
-
-
-
-
-
-
-
-
 
    </body>
 

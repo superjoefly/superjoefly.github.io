@@ -34,12 +34,13 @@
   #main {
     border-top: 2px solid red;
     text-align: justify;
+    height: auto;
+    flex-direction: column;
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (min-width: 1250px) {
     #main {
-      flex-direction: column;
-      height: auto;
+      flex-direction: row;
     }
   }
 
@@ -176,8 +177,8 @@
 
 
     <div id="footer">
-      <p style="float: left">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a></p>
-      <p style="float: right">Copyright &copy; 2017 by SJF Development</p>
+      <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a>
+      Copyright &copy; 2017 by SJF Development</p>
     </div>
 
 
