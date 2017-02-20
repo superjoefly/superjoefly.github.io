@@ -136,6 +136,19 @@ width: 100%;
 border: 1px solid lime;
 }
 
+#footer p {
+  float: left;
+}
+
+/*Next Button*/
+
+#next {
+  margin-top: 20px;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+}
+
 
 
 /*Navigation*/

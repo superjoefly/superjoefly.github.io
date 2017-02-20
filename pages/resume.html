@@ -1,92 +1,92 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Welcome</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+<head>
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 
-      <link type="text/css" href="../styles.css" rel="stylesheet">
+    <link type="text/css" href="../styles.css" rel="stylesheet">
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-      <script src="../scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 
-      <style>
-      #container {
-        background: url("../images/sky.jpg") top center fixed;
-        background-size: cover;
-      }
-
-      #main {
-        height: auto;
-        text-align: left;
-        align-items: center;;
-        flex-direction: column;
-      }
-
-      #main div {
-        width: 100%;
-      }
-
-      @media screen and (min-width: 800px) {
-        #main div {
-          width: 75%;
+    <style>
+        #container {
+            background: url("../images/sky.jpg") top center fixed;
+            background-size: cover;
         }
-      }
 
-      #section {
-        border-right: 2px solid red;
-      }
+        #main {
+            height: auto;
+            text-align: left;
+            align-items: center;
+            ;
+            flex-direction: column;
+        }
 
-      h2, h3 {
-        text-align: center;
-      }
+        #main div {
+            width: 100%;
+        }
 
-      p {
-        padding: 20px;
-      }
+        @media screen and (min-width: 800px) {
+            #main div {
+                width: 75%;
+            }
+        }
 
-      ul {
-        list-style-type: none;
-      }
+        #section {
+            border-right: 2px solid red;
+        }
 
-      ul li:before {
-        background-image: url("../images/greenbullet.png");
-        background-size: 25px 25px;
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        content: "";
-        margin-bottom: -5px;
-      }
+        h2,
+        h3 {
+            text-align: center;
+        }
 
-      ul li a:link {
-        color: orange;
-      }
+        p {
+            padding: 20px;
+        }
 
-      ul li a:visited {
-        color: white;
-      }
+        ul {
+            list-style-type: none;
+        }
 
-      ul li a:hover {
-        color: white;
-      }
+        ul li:before {
+            background-image: url("../images/greenbullet.png");
+            background-size: 25px 25px;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            content: "";
+            margin-bottom: -5px;
+        }
 
-      ul li a:active {
-        color: red;
-      }
+        ul li a:link {
+            color: orange;
+        }
 
-      </style>
-    </head>
+        ul li a:visited {
+            color: white;
+        }
 
-   <body>
+        ul li a:hover {
+            color: white;
+        }
 
-      <div id="container">
+        ul li a:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
         <span id="title">
           <h1>SJF Development</h1>
         </span>
@@ -95,118 +95,122 @@
           <i class="fa fa-chevron-down" style="font-size: 30px; color: white; cursor: pointer"></i>
         </span>
 
-       <span id="bars">
+        <span id="bars">
          <i class="fa fa-bars" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"></i>
         </span>
-      </div>
+    </div>
 
 
 
-      <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
         <a href="javascript:void(0)" class="active">Resume</a>
         <a href="projects.html">Projects</a>
-      </div>
+    </div>
 
 
 
-     <div id="main">
+    <div id="main">
 
-       <div id="header">
-         <h2>Resume</h2>
-       </div>
-
-
-       <div id="content">
-         <h2>Education</h2>
-         <p>Most of my learnings have come from online tutorials provided by the web-development community. I often pull from resources including Stackoverflow, W3Schools, CSS-Tricks and Google, as this method is often the best and quickest way to find multiple solutions to common, or similar challenges. Following is a list of recent web-development related educational achievements:</p>
-
-         <ul>
-           <li>HTML5: Codecademy, W3Schools</li>
-           <li>CSS3: Codecademy, W3Schools</li>
-           <li>JavaScript: Channel9.msdn.com, Codecademy, W3Schools</li>
-           <li>jQuery: Channel9.msdn.com, W3Schools, jQuery.com</li>
-           <li>jQuery UI: Channel9.msdn.com, jQuery.com</li>
-           <li>jQuery Mobile: W3Schools, jQuery.com</li>
-           <li>Vue.js: Laracasts.com, Vuejs.org</li>
-         </ul>
-       </div>
-
-       <div id="section">
-         <h2>Advanced Skills</h2>
-         <p>My skill-set is a work in progress that I put effort towards on a daily basis. There is a ton of information online, and there are a lot of skills that I'm currently working on developing. Because of the massive amount of information available, it can often be difficult to know exactly what to learn in order to become employable. At this point, I'm planning on becomeing a full stack web-developer, and I have a strong interest in web-animation and mobile development. Following are some of the more advanced skills that I have aquired in my recent educational efforts:</p>
-
-         <ul>
-           <li>Git: creating repositories, adding files, cloning repositories, pulling, pushing, submitting issues etc.</li>
-           <li>Publishing websites, adding and editing files using Filezilla,Search Engine Optimization techniques</li>
-           <li>Responsive Web Design Using Grids, Flexbox and Media Queries</li>
-           <li>Using frameworks such as W3.CSS and Bootstrap</li>
-           <li>Making websites more interactive and visually appealing</li>
-           <li>Animations: CSS Animations, Animate.css, Velocity.js</li>
-           <li>Digital Manipulation using GIMP</li>
-           <li>Familiar with Linux Command Line</li>
-           <li>Experience with MYSQL and LAMP Stack</li>
-           <li>Strong artistic and problem solving abilities</li>
-         </ul>
-       </div>
-
-       <div id="section2">
-         <h2>Goals</h2>
-         <p>I have many goals and a list of languages and skills I would like to gain in the near future. Moving toward these goals is a daily effort.</p>
-
-         <ul>
-           <li>Become more fluent in JavaScript; learn Vue.js</li>
-           <li>Develop and contribute to Github open source projects</li>
-           <li>Improve web animation and digital manipulation skills</li>
-           <li>Make connections with the Web Development Community</li>
-           <li>Research Moile Development Frameworks</li>
-         </ul>
-
-         <h3>Things I Want to Learn:</h3>
-
-         <ul>
-           <li>Java</li>
-           <li>SQL</li>
-           <li>PHP</li>
-           <li>Node.js</li>
-           <li>Wordpress</li>
-         </ul>
-       </div>
-
-       <div id="section3">
-         <h2>Projects</h2>
-         <p>These are links to some of my recent projects:</p>
-
-         <ul>
-           <li><a href="http://www.joefly.site" target="_blank">Joefly.site</a></li>
-           <li><a href="http://www.sjfly.site" target="_blank">Sjfly.site</a></li>
-           <li><a href="http://joefly.site/pages/photography/photography.html" target="_blank">Photography</a></li>
-           <li><a href="http://www.txccedp.org" target="_blank">Texas Catholic Campaign...</a></li>
-           <li><a href="http://www.belovedcommunityproject.org" target="_blank">The Beloved Community...</a></li>
-         </ul>
-       </div>
+        <div id="header">
+            <h2>Resume</h2>
+        </div>
 
 
+        <div id="content">
+            <h2>Education</h2>
+            <p>Most of my learnings have come from online tutorials provided by the web-development community. I often pull from resources like Stackoverflow, W3Schools, CSS-Tricks and Google, as this method is often the best and quickest way to find
+                multiple solutions to common, or similar challenges. Following is a list of recent web-development related educational achievements:</p>
 
-     </div>
+            <ul>
+                <li>HTML5: Codecademy, W3Schools</li>
+                <li>CSS3: Codecademy, W3Schools</li>
+                <li>JavaScript: Channel9.msdn.com, Codecademy, W3Schools</li>
+                <li>jQuery: Channel9.msdn.com, W3Schools, jQuery.com</li>
+                <li>jQuery UI: Channel9.msdn.com, jQuery.com</li>
+                <li>jQuery Mobile: W3Schools, jQuery.com</li>
+                <li>Vue.js: Laracasts.com, Vuejs.org</li>
+            </ul>
+        </div>
 
-     <div id="footer">
-       <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a>
-       Copyright &copy; 2017 by SJF Development</p>
-     </div>
+        <div id="section">
+            <h2>Advanced Skills</h2>
+            <p>My skill-set is a work in progress that I put effort towards on a daily basis. There is a ton of information online, and there are a lot of skills that I'm currently working on developing. Because of the massive amount of information available,
+                it can often be difficult to know exactly what to learn. At this point, I'm planning on becoming a full stack web-developer. I also have a strong interest in responsive design, web-animation and mobile development. Following
+                are some of the more advanced skills that I have aquired in my recent educational efforts:</p>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+            <ul>
+                <li>Git: creating repositories, adding files, cloning repositories, pulling, pushing, submitting issues etc.</li>
+                <li>Publishing websites, adding and editing files using Filezilla, Search Engine Optimization techniques</li>
+                <li>Responsive web design using Grids, Flexbox and Media Queries</li>
+                <li>Using frameworks such as W3.CSS and Bootstrap</li>
+                <li>Making websites more interactive and visually appealing using JavaScript, jQuery and Gimp</li>
+                <li>Animations: CSS Animations, Animate.css, Velocity.js</li>
+                <li>Digital Manipulation using GIMP</li>
+                <li>Familiar with Linux Command Line</li>
+                <li>Experience with MYSQL and LAMP Stack</li>
+                <li>Strong artistic and problem solving abilities</li>
+            </ul>
+        </div>
 
-     <script>
-     $("#down").click(function() {
-     $("#main").velocity("scroll",
-     {duration: 1500, easing: "ease-in-out"});
-     });
-     </script>
+        <div id="section2">
+            <h2>Goals</h2>
+            <p>I have many goals and a list of languages and skills I would like to learn in the near future. Moving toward these goals is a daily effort.</p>
 
-   </body>
+            <ul>
+                <li>Become more fluent in JavaScript; learn Vue.js (*in progress)</li>
+                <li>Develop and contribute to Github open source projects</li>
+                <li>Improve web animation and digital manipulation skills</li>
+                <li>Make connections with the Web Development Community</li>
+                <li>Research Moile Development Frameworks (Ionic and Onsen)</li>
+            </ul>
+
+            <h3>Things I Want to Learn:</h3>
+
+            <ul>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>PHP</li>
+                <li>Node.js</li>
+                <li>Wordpress</li>
+            </ul>
+        </div>
+
+        <div id="section3">
+            <h2>Projects</h2>
+            <p>These are links to some of my recent projects:</p>
+
+            <ul>
+                <li><a href="http://www.joefly.site" target="_blank">Joefly.site</a></li>
+                <li><a href="http://www.sjfly.site" target="_blank">Sjfly.site</a></li>
+                <li><a href="http://joefly.site/pages/photography/photography.html" target="_blank">Photography</a></li>
+                <li><a href="http://www.txccedp.org" target="_blank">Texas Catholic Campaign...</a></li>
+                <li><a href="http://www.belovedcommunityproject.org" target="_blank">The Beloved Community...</a></li>
+            </ul>
+        </div>
+
+        <a href="projects.html" id="next">&#10157;</a>
+
+    </div>
+
+    <div id="footer">
+        <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a> Copyright &copy; 2017 by SJF Development</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
+    <script>
+        $("#down").click(function() {
+            $("#main").velocity("scroll", {
+                duration: 1500,
+                easing: "ease-in-out"
+            });
+        });
+    </script>
+
+</body>
 
 
-  </html>
+</html>
