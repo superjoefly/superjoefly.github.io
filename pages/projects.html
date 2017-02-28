@@ -27,13 +27,24 @@
             background-size: cover;
         }
 
+        p {
+            color: azure;
+        }
+
         #main {
             flex-direction: column;
             height: auto;
         }
 
         #main div {
-            width: 75%;
+            width: 100%;
+        }
+
+        /*div sizing for large screens*/
+        @media all and (min-width: 800px) {
+            #main div {
+                width: 75%;
+            }
         }
 
         #main img {
@@ -45,6 +56,10 @@
             max-width: 100%;
         }
 
+        #section {
+            border-bottom: none;
+        }
+
         #section2 {
           border-left: none;
           border-right: 2px solid orange;
@@ -54,6 +69,7 @@
             box-shadow: 2px 2px 4px #82ddd3;
         }
 
+        /*image and content sizing for large screens*/
         @media all and (min-width: 600px) {
             #main img {
                 max-width: 500px;
@@ -141,14 +157,6 @@
     </script>
 
 
-
-
-
-
-
-
-
 </body>
-
 
 </html>

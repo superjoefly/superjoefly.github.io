@@ -23,6 +23,8 @@ ul {
 
 
 
+
+
 /*Top of Page*/
 
 #title h1{
@@ -123,6 +125,7 @@ height: auto;
   flex: 1 1 0;
 }
 
+/*black bottom border on small screens*/
 @media screen and (max-width: 600px) {
   #header, #content, #section, #section2, #section3 {
     border-bottom: 2px solid black;
@@ -200,6 +203,7 @@ border: 1px solid lime;
   margin-left: 50px;
 }
 
+/*padding and font size for small screens*/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

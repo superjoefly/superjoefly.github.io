@@ -31,6 +31,7 @@
             flex-direction: column;
         }
 
+        /*flex items side to side on large screen*/
         @media screen and (min-width: 1250px) {
             #main {
                 flex-direction: row;
@@ -111,18 +112,17 @@
 
 
     <div id="container">
+      <span id="title">
+        <h1>SJF Development</h1>
+      </span>
 
-        <span id="title">
-      <h1>SJF Development</h1>
-    </span>
+      <span id="down">
+        <i class="fa fa-chevron-down" style="font-size: 30px; color: white; cursor: pointer"></i>
+      </span>
 
-        <span id="down">
-      <i class="fa fa-chevron-down" style="font-size: 30px; color: white; cursor: pointer"></i>
-    </span>
-
-        <span id="bars">
-     <i class="fa fa-bars" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"></i>
-    </span>
+      <span id="bars">
+       <i class="fa fa-bars" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"></i>
+      </span>
     </div>
 
 
@@ -140,12 +140,11 @@
     <div id="main">
 
         <div id="header">
-
             <h1>About Me</h1>
             <p>My name is Joseph Atwood and I live in Boulder, Colorado. I currently spend most of my time studying web devlopment, learning new programming languages and developing web pages. I've been coding for about 6 months, and have discovered that
-                I have a passion for development, design and digital manipulation. I really enjoy making websites that are interactive and responsive, and hope to become more active in web animation and mobile development. I've learned most of my skills
-                from the web, but I also have plans to attend a local community college to further my education and become more involved with the web development community. I greatly appreciate the online development, design and programming culture, and
-                all the open-source documentation that is available to help me on this path.</p>
+            I have a passion for development, design and digital manipulation. I really enjoy making websites that are interactive and responsive, and hope to become more active in web animation and mobile development. I've learned most of my skills
+            from the web, but I also have plans to attend a local community college to further my education and become more involved with the web development community. I greatly appreciate the online development, design and programming culture, and
+            all the open-source documentation that is available to help me on this path.</p>
         </div>
 
         <div id="content">
@@ -161,7 +160,6 @@
                 <li>I like to read sci-fi and thrillers. I also really like horror movies :-)</li>
                 <li>Spirituality is a very important part of my life...I pray and mediatate on a regular basis.</li>
             </ul>
-
         </div>
 
         <div id="section2">
@@ -181,13 +179,6 @@
     </div>
 
 
-
-
-
-
-
-
-
     <script>
         $("#down").click(function() {
             $("#main").velocity("scroll", {
@@ -196,19 +187,6 @@
             });
         });
     </script>
-
-
-
-    <!-- <script>
-		var myVideo = document.getElementById("video1");
-		function playPause() {
-			if (myVideo.paused)
-			myVideo.play();
-			else
-				myVideo.pause();
-		}
-		</script> -->
-
 
 </body>
 

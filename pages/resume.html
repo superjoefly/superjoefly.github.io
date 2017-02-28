@@ -33,6 +33,7 @@
             width: 100%;
         }
 
+        /*div sizing for large screens*/
         @media screen and (min-width: 800px) {
             #main div {
                 width: 75%;
@@ -62,6 +63,12 @@
             list-style-type: none;
         }
 
+        /*align list items*/
+        ul li {
+            padding-left: 10px;
+            text-indent: -1.5em;
+        }
+
         ul li:before {
             background-image: url("../images/greenbullet.png");
             background-size: 25px 25px;
@@ -69,7 +76,7 @@
             width: 25px;
             height: 25px;
             content: "";
-            margin-bottom: -5px;
+            margin-bottom: -7.5px;
         }
 
         ul li a:link {
