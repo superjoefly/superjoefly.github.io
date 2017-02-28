@@ -68,18 +68,22 @@
             <img src="images/transfer.png" alt="transfer image" />
         </div>
 
-        <a href="pages/about.html" id="next">&#10157;</a>
+        <a href="javascript:delay('pages/about.html')" id="next">&#10157;</a>
+
+        <!-- <button type="button" id="next">Next</button> -->
     </div>
 
     <div id="footer">
         <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a> Copyright &copy; 2017 by SJF Development</p>
     </div>
 
-    <!-- Velocity.js -->
+    <!-- Velocity Animations -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
 
-    <!-- Scroll Onclick -->
+    <script src="scripts/velocity.ui.js"></script>
+
+    <!-- Velocity Animations -->
 
     <script>
         $("#down").click(function() {
@@ -88,6 +92,17 @@
                 easing: "ease-in-out"
             });
         });
+
+        $("#next").click(function() {
+            $("#main").velocity("transition.slideLeftBigOut");
+        });
+
+        function delay (URL) {
+            setTimeout(function() {
+                window.location = URL
+            }, 1000);
+        };
+
     </script>
 
 </body>

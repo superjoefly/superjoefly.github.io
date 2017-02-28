@@ -204,7 +204,7 @@
             </ul>
         </div>
 
-        <a href="projects.html" id="next">&#10157;</a>
+        <a href="javascript:delay('projects.html')" id="next">&#10157;</a>
 
     </div>
 
@@ -212,7 +212,11 @@
         <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a> Copyright &copy; 2017 by SJF Development</p>
     </div>
 
+    <!-- Velocity Animations -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
+    <script src="../scripts/velocity.ui.js"></script>
 
     <script>
         $("#down").click(function() {
@@ -221,6 +225,16 @@
                 easing: "ease-in-out"
             });
         });
+
+        $("#next").click(function() {
+            $("div div").velocity("transition.whirlOut", {stagger: 150});
+        })
+
+        function delay (URL) {
+            setTimeout(function() {
+                window.location = URL
+            }, 1000);
+        }
     </script>
 
 </body>

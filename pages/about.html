@@ -15,8 +15,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
-
     <script src="../scripts/script.js"></script>
     <style>
         #container {
@@ -167,16 +165,19 @@
             <img src="../images/bella.jpg" alt="Bella" />
         </div>
 
-        <a href="resume.html" id="next">&#10157;</a>
+        <a href="javascript:delay('resume.html')" id="next">&#10157;</a>
 
     </div>
-
-
-
 
     <div id="footer">
         <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a> Copyright &copy; 2017 by SJF Development</p>
     </div>
+
+    <!-- Velocity Animations -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
+    <script src="../scripts/velocity.ui.js"></script>
 
 
     <script>
@@ -186,6 +187,16 @@
                 easing: "ease-in-out"
             });
         });
+
+        $("#next").click(function() {
+                $("#main").velocity("transition.perspectiveLeftOut", {delay: 500});
+            })
+
+        function delay (URL) {
+            setTimeout(function() {
+                window.location = URL
+            }, 1000);
+        }
     </script>
 
 </body>

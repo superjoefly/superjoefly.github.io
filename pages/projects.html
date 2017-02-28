@@ -13,8 +13,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
-
     <script src="../scripts/script.js"></script>
 
     <style>
@@ -139,13 +137,19 @@
             <a href="http://joefly.site/pages/photography/photography.html" target="_blank"><img src="../images/snow.jpg" alt="Photography" /></a>
         </div>
 
-        <a href="../index.html" id="next"><i class="fa fa-home"></i></a>
+        <a href="javascript:delay('../index.html')" id="next"><i class="fa fa-home"></i></a>
 
     </div>
 
     <div id="footer">
         <p style="font-size: 1em;">Contact: <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a> Copyright &copy; 2017 by SJF Development</p>
     </div>
+
+    <!-- Velocity Animations -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+
+    <script src="../scripts/velocity.ui.js"></script>
 
     <script>
         $("#down").click(function() {
@@ -154,6 +158,16 @@
                 easing: "ease-in-out"
             });
         });
+
+        $("#next").click(function() {
+            $("#main").velocity("transition.bounceUpOut", {delay: 500});
+        })
+
+        function delay (URL) {
+            setTimeout(function() {
+                window.location = URL
+            }, 1000);
+        }
     </script>
 
 
