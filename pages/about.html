@@ -189,8 +189,11 @@
         });
 
         $("#next").click(function() {
-                $("#main").velocity("transition.perspectiveLeftOut", {delay: 500});
-            })
+                $("#main").velocity("transition.perspectiveLeftOut", {
+                  delay: 500,
+                  duration: 1500
+                });
+            });
 
         function delay (URL) {
             setTimeout(function() {

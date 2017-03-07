@@ -58,7 +58,7 @@
 
         <div id="section">
             <h2>Develop</h2>
-            <video style="width: 75%; height: auto;" autoplay loop poster="/images/code_snapshot.png">
+            <video id="video" style="width: 75%; height: auto;" muted autoplay loop poster="/images/code_snapshot.png">
            <source src="videos/dev.mp4" type="video/mp4" />
          </video>
         </div>
@@ -94,7 +94,9 @@
         });
 
         $("#next").click(function() {
-            $("#main").velocity("transition.slideLeftBigOut");
+            $("#main").velocity("transition.slideLeftBigOut", {
+                duration: 1500
+            });
         });
 
         function delay (URL) {

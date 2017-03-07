@@ -227,7 +227,9 @@
         });
 
         $("#next").click(function() {
-            $("div div").velocity("transition.whirlOut", {stagger: 150});
+            $("div div").velocity("transition.whirlOut", {
+              stagger: 150
+            });
         })
 
         function delay (URL) {
