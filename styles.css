@@ -136,13 +136,17 @@ height: auto;
 
 #footer {
 width: 100%;
-border: 1px solid lime;
+border-top: 1px solid lime;
 }
 
 #footer a {
   text-decoration: none;
   position: relative;
   top: 10px;
+}
+
+#footer p {
+  color: grey;
 }
 
 /*Next Button*/
