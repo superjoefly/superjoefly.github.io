@@ -16,16 +16,18 @@
     <script src="../scripts/script.js"></script>
 
     <style>
-        #container {
-            background: url("../images/sky.jpg") top center fixed;
-            background-size: cover;
+        .subtitle {
+          background-color: grey;
+          padding: 20px;
+          margin-left: 10px;
+          border-radius: 50%;
+          display: inline-block;
         }
 
         #main {
             height: auto;
             text-align: left;
             align-items: center;
-            ;
             flex-direction: column;
         }
 
@@ -99,15 +101,7 @@
 
 <body>
 
-    <div id="container">
-        <span id="title">
-          <h1>SJF Development</h1>
-        </span>
-
-        <span id="down">
-          <i class="fa fa-chevron-down" style="font-size: 30px; color: white; cursor: pointer"></i>
-        </span>
-
+    <div>
         <span id="bars">
          <i class="fa fa-bars" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"></i>
         </span>
@@ -140,7 +134,9 @@
                 <li>HTML5, CSS3, JavaScript</li>
                 <li>jQuery, jQuery Mobile, jQuery UI</li>
                 <li>PHP5, SQL, mySQL</li>
+                <li>Nodejs, MongoDB</li>
                 <li>Vue.js, Laravel 5.5</li>
+                <li>Quasar-Framework</li>
                 <li>W3CSS, Bootstrap, Bulma</li>
             </ul>
         </div>
@@ -155,10 +151,10 @@
                 <li>Responsive web design using Grids, Flexbox and Media Queries</li>
                 <li>Using modern CSS frameworks such as W3.CSS, Bootstrap and Bulma</li>
                 <li>Making websites more interactive and visually appealing using JavaScript, jQuery and Gimp</li>
-                <li>Animations: CSS Animations, Animate.css, Velocity.js</li>
+                <li>CSS Animations, Animate.css, Velocity.js</li>
                 <li>Digital Manipulation using GIMP</li>
-                <li>Familiar with Linux Command Line</li>
-                <li>Experience with MYSQL and LAMP Stack</li>
+                <li>Linux Command Line</li>
+                <li>LAMP Stack</li>
                 <li>Strong artistic and problem solving abilities</li>
                 <li>Modern frameworks such as Laravel 5.5 and Vuejs 2.0</li>
             </ul>
@@ -169,11 +165,11 @@
             <p>I have many goals and a list of languages and skills I would like to learn in the near future. Moving toward these goals is a daily effort.</p>
 
             <ul>
-                <li>Become more fluent in ES6 JavaScript</li>
-                <li>Develop and contribute to Github open source projects</li>
-                <li>Improve web animation and digital manipulation skills</li>
-                <li>Make connections with the Web Development Community</li>
-                <li>Learn a mobile framework such as Quasar</li>
+                <li>Improve JavaScript and PHP Skills</li>
+                <li>Contribute to Open Source</li>
+                <li>Improve Web-Animation and Digital Manipulation Skills</li>
+                <li>Learn Mobile-Development</li>
+                <li>Make Connections with the Development / Programming Community</li>
             </ul>
 
             <h3>Things I Want to Learn:</h3>
@@ -204,7 +200,6 @@
     </div>
 
     <div id="footer" style="text-align:center">
-        <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a>
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> by SJF Development</p>
     </div>
 
@@ -215,12 +210,12 @@
     <script src="../scripts/velocity.ui.js"></script>
 
     <script>
-        $("#down").click(function() {
-            $("#main").velocity("scroll", {
-                duration: 1500,
-                easing: "ease-in-out"
-            });
-        });
+        // $("#down").click(function() {
+        //     $("#main").velocity("scroll", {
+        //         duration: 1500,
+        //         easing: "ease-in-out"
+        //     });
+        // });
 
         $("#next").click(function() {
             $("div div").velocity("transition.whirlOut", {

@@ -16,9 +16,12 @@
     <script src="../scripts/script.js"></script>
 
     <style>
-        #container {
-            background: url("../images/design.png") top center fixed;
-            background-size: cover;
+        .subtitle {
+          background-color: grey;
+          padding: 20px;
+          margin-left: 10px;
+          border-radius: 50%;
+          display: inline-block;
         }
 
         p {
@@ -77,15 +80,7 @@
 
 <body>
 
-    <div id="container">
-        <span id="title">
-          <h1>SJF Development</h1>
-        </span>
-
-        <span id="down">
-          <i class="fa fa-chevron-down" style="font-size: 30px; color: white; cursor: pointer"></i>
-        </span>
-
+    <div>
         <span id="bars">
          <i class="fa fa-bars" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"></i>
         </span>
@@ -111,25 +106,25 @@
 
         <div id="content">
             <h2>Joefly.site</h2>
-            <p>This website has links to many of my projects!</p>
+            <p>Programming and Development</p>
             <a href="http://joefly.site/" target="_blank"><img src="../images/joefly_site_screenshot.png" alt="Joefly.site" /></a>
         </div>
 
         <div id="section">
             <h2>Animations</h2>
-            <p>Animations using CSS, Animate.css and Velocity.js</p>
+            <p>Various Web Animations</p>
             <a href="http://joefly.site/pages/projects/animations" target="_blank"><img src="../images/animations5_screenshot.png" alt="Animations" /></a>
         </div>
 
         <div id="section2">
             <h2>Digital</h2>
-            <p>Digital Manipulation using GIMP</p>
+            <p>Digital Image Manipulation</p>
             <a href="http://joefly.site/pages/projects/digital_art" target="_blank"><img src="../images/lamp_screenshot.png" alt="Digital Manipulation" /></a>
         </div>
 
         <div id="section3">
             <h2>Photography</h2>
-            <p>My Photography Page</p>
+            <p>Amazing Photography</p>
             <a href="http://joefly.site/pages/projects/photography" target="_blank"><img src="../images/snow.jpg" alt="Photography" /></a>
         </div>
 
@@ -138,7 +133,6 @@
     </div>
 
     <div id="footer" style="text-align:center">
-        <a href="mailto:superjoefly@gmail.com">SuperJoeFly</a>
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> by SJF Development</p>
     </div>
 
@@ -149,13 +143,6 @@
     <script src="../scripts/velocity.ui.js"></script>
 
     <script>
-        $("#down").click(function() {
-            $("#main").velocity("scroll", {
-                duration: 1500,
-                easing: "ease-in-out"
-            });
-        });
-
         $("#next").click(function() {
             $("#main").velocity("transition.bounceUpOut", {
               delay: 500
